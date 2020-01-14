@@ -1,1 +1,7 @@
 <?php foreach(\app\models\Visa::find()->where(['category_id' => 2, 'city_id' => \Yii::$app->params['site-city-selected'] ? \Yii::$app->params['site-city-selected']->id) : 1 ]->all() as $elem): ?>
+
+<?php if($counter<1): ?>
+                  <script>
+                  document.getElementById("cat-2").remove();
+                  </script>
+                <?php endif; ?>
