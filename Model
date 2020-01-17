@@ -1,0 +1,279 @@
+<?php
+
+namespace app\models;
+
+use Yii;
+use yii\base\Model;
+
+/**
+ * Настройки, хранящиеся в БД
+ */
+class SiteInfo extends Model {
+    
+    // Заголовок
+    public $mpTitle1_l1;
+    public $mpTitle1_l2;
+    public $mpTitle1_l3;
+    public $mpTitle1_l4;
+    public $mpTitle1_l5;
+    public $mpTitle2_l1;
+    public $mpTitle2_l2;
+    public $mpTitle2_l3;
+    public $mpTitle2_l4;
+    public $mpTitle2_l5;
+
+    public $mpLinkTitle_l1;
+    public $mpLinkTitle_l2;
+    public $mpLinkTitle_l3;
+    public $mpLinkTitle_l4;
+    public $mpLinkTitle_l5;
+
+    // Кто мы
+    public $mpAboutTitle_l1;
+    public $mpAboutTitle_l2;
+    public $mpAboutTitle_l3;
+    public $mpAboutTitle_l4;
+    public $mpAboutTitle_l5;
+
+    public $mpAboutContent_l1;
+    public $mpAboutContent_l2;
+    public $mpAboutContent_l3;
+    public $mpAboutContent_l4;
+    public $mpAboutContent_l5;
+
+    // 3 причины заказывать кальяны у нас
+    public $mpAdvantagesTitle_l1;
+    public $mpAdvantagesTitle_l2;
+    public $mpAdvantagesTitle_l3;
+    public $mpAdvantagesTitle_l4;
+    public $mpAdvantagesTitle_l5;
+
+    public $mpAdvantage1Title_l1;
+    public $mpAdvantage1Title_l2;
+    public $mpAdvantage1Title_l3;
+    public $mpAdvantage1Title_l4;
+    public $mpAdvantage1Title_l5;
+
+    public $mpAdvantage1Content_l1;
+    public $mpAdvantage1Content_l2;
+    public $mpAdvantage1Content_l3;
+    public $mpAdvantage1Content_l4;
+    public $mpAdvantage1Content_l5;
+
+    public $mpAdvantage2Title_l1;
+    public $mpAdvantage2Title_l2;
+    public $mpAdvantage2Title_l3;
+    public $mpAdvantage2Title_l4;
+    public $mpAdvantage2Title_l5;
+
+    public $mpAdvantage2Content_l1;
+    public $mpAdvantage2Content_l2;
+    public $mpAdvantage2Content_l3;
+    public $mpAdvantage2Content_l4;
+    public $mpAdvantage2Content_l5;
+
+    public $mpAdvantage3Title_l1;
+    public $mpAdvantage3Title_l2;
+    public $mpAdvantage3Title_l3;
+    public $mpAdvantage3Title_l4;
+    public $mpAdvantage3Title_l5;
+
+    public $mpAdvantage3Content_l1;
+    public $mpAdvantage3Content_l2;
+    public $mpAdvantage3Content_l3;
+    public $mpAdvantage3Content_l4;
+    public $mpAdvantage3Content_l5;
+
+    // Коммерческое предложение
+    public $mpOfferTitle_l1;
+    public $mpOfferTitle_l2;
+    public $mpOfferTitle_l3;
+    public $mpOfferTitle_l4;
+    public $mpOfferTitle_l5;
+
+    public $mpOfferContent_l1;
+    public $mpOfferContent_l2;
+    public $mpOfferContent_l3;
+    public $mpOfferContent_l4;
+    public $mpOfferContent_l5;
+
+    public $mpOfferLinkTitle_l1;
+    public $mpOfferLinkTitle_l2;
+    public $mpOfferLinkTitle_l3;
+    public $mpOfferLinkTitle_l4;
+    public $mpOfferLinkTitle_l5;
+
+    public $mpOfferLink_l1;
+    public $mpOfferLink_l2;
+    public $mpOfferLink_l3;
+    public $mpOfferLink_l4;
+    public $mpOfferLink_l5;
+
+    // Рассчитать стоимость доставки
+    public $mpDeliverTitle_l1;
+    public $mpDeliverTitle_l2;
+    public $mpDeliverTitle_l3;
+    public $mpDeliverTitle_l4;
+    public $mpDeliverTitle_l5;
+
+    public $mpDeliverContent_l1;
+    public $mpDeliverContent_l2;
+    public $mpDeliverContent_l3;
+    public $mpDeliverContent_l4;
+    public $mpDeliverContent_l5;
+
+    public $mpDeliverLinkTitle_l1;
+    public $mpDeliverLinkTitle_l2;
+    public $mpDeliverLinkTitle_l3;
+    public $mpDeliverLinkTitle_l4;
+    public $mpDeliverLinkTitle_l5;
+
+    public $mpDeliverLink_l1;
+    public $mpDeliverLink_l2;
+    public $mpDeliverLink_l3;
+    public $mpDeliverLink_l4;
+    public $mpDeliverLink_l5;
+
+    // Процесс производства
+    public $mpMakingTitle_l1;
+    public $mpMakingTitle_l2;
+    public $mpMakingTitle_l3;
+    public $mpMakingTitle_l4;
+    public $mpMakingTitle_l5;
+
+    public $mpMakingVideo;
+
+    // Карта
+    public $mpCoordinates;
+    public $mpMapText_l1;
+    public $mpMapText_l2;
+    public $mpMapText_l3;
+    public $mpMapText_l4;
+    public $mpMapText_l5;
+
+    // 5 шагов чтобы сделать заказ
+    public $mpStepsTitle_l1;
+    public $mpStepsTitle_l2;
+    public $mpStepsTitle_l3;
+    public $mpStepsTitle_l4;
+    public $mpStepsTitle_l5;
+
+    public $mpStep1_l1;
+    public $mpStep1_l2;
+    public $mpStep1_l3;
+    public $mpStep1_l4;
+    public $mpStep1_l5;
+
+    public $mpStep2_l1;
+    public $mpStep2_l2;
+    public $mpStep2_l3;
+    public $mpStep2_l4;
+    public $mpStep2_l5;
+
+    public $mpStep3_l1;
+    public $mpStep3_l2;
+    public $mpStep3_l3;
+    public $mpStep3_l4;
+    public $mpStep3_l5;
+
+    public $mpStep4_l1;
+    public $mpStep4_l2;
+    public $mpStep4_l3;
+    public $mpStep4_l4;
+    public $mpStep4_l5;
+
+    public $mpStep5_l1;
+    public $mpStep5_l2;
+    public $mpStep5_l3;
+    public $mpStep5_l4;
+    public $mpStep5_l5;
+
+    //Отзывы
+    public $mpReviewsTitle_l1;
+    public $mpReviewsTitle_l2;
+    public $mpReviewsTitle_l3;
+    public $mpReviewsTitle_l4;
+    public $mpReviewsTitle_l5;
+
+    public $mpReviewsText_l1;
+    public $mpReviewsText_l2;
+    public $mpReviewsText_l3;
+    public $mpReviewsText_l4;
+    public $mpReviewsText_l5;
+
+    public $mpReviewsLink;
+
+    // О нас в Instagram
+    public $mpInstagramTitle_l1;
+    public $mpInstagramTitle_l2;
+    public $mpInstagramTitle_l3;
+    public $mpInstagramTitle_l4;
+    public $mpInstagramTitle_l5;
+
+    public $mpInstagramLinkTitle_l1;
+    public $mpInstagramLinkTitle_l2;
+    public $mpInstagramLinkTitle_l3;
+    public $mpInstagramLinkTitle_l4;
+    public $mpInstagramLinkTitle_l5;
+    
+    public $mpInstagramLink;
+
+    // Мы уже работаем с
+    public $mpPartnersTitle_l1;
+    public $mpPartnersTitle_l2;
+    public $mpPartnersTitle_l3;
+    public $mpPartnersTitle_l4;
+    public $mpPartnersTitle_l5;
+
+
+	public function rules()
+	{
+          return[
+            [['mpTitle1_l1', 'mpTitle1_l2', 'mpTitle1_l3', 'mpTitle1_l4', 'mpTitle1_l5'], 'string', 'max' => '255'],
+            [['mpTitle2_l1', 'mpTitle2_l2', 'mpTitle2_l3', 'mpTitle2_l4', 'mpTitle2_l5'], 'string', 'max' => '255'],
+            [['mpLinkTitle_l1', 'mpLinkTitle_l2', 'mpLinkTitle_l3', 'mpLinkTitle_l4', 'mpLinkTitle_l5'], 'string', 'max' => 255],
+            [['mpAboutTitle_l1', 'mpAboutTitle_l2', 'mpAboutTitle_l3', 'mpAboutTitle_l4', 'mpAboutTitle_l5'], 'string', 'max' => '255'],
+            [['mpAboutContent_l1','mpAboutContent_l2','mpAboutContent_l3','mpAboutContent_l4','mpAboutContent_l5'], 'string'],
+            [['mpAdvantagesTitle_l1','mpAdvantagesTitle_l2','mpAdvantagesTitle_l3','mpAdvantagesTitle_l4','mpAdvantagesTitle_l5'], 'string', 'max' => 255],
+            [['mpAdvantage1Title_l1', 'mpAdvantage1Title_l2', 'mpAdvantage1Title_l3', 'mpAdvantage1Title_l4', 'mpAdvantage1Title_l5'], 'string', 'max' => 255],
+            [['mpAdvantage1Content_l1', 'mpAdvantage1Content_l2', 'mpAdvantage1Content_l3', 'mpAdvantage1Content_l4', 'mpAdvantage1Content_l5'], 'string'],
+            [['mpAdvantage2Title_l1', 'mpAdvantage2Title_l2', 'mpAdvantage2Title_l3', 'mpAdvantage2Title_l4', 'mpAdvantage2Title_l5'], 'string', 'max' => 255],
+            [['mpAdvantage2Content_l1', 'mpAdvantage2Content_l2', 'mpAdvantage2Content_l3', 'mpAdvantage2Content_l4', 'mpAdvantage2Content_l5'], 'string'],
+            [['mpAdvantage3Title_l1', 'mpAdvantage3Title_l2', 'mpAdvantage3Title_l3', 'mpAdvantage3Title_l4', 'mpAdvantage3Title_l5'], 'string', 'max' => 255],
+            [['mpAdvantage3Content_l1', 'mpAdvantage3Content_l2', 'mpAdvantage3Content_l3', 'mpAdvantage3Content_l4', 'mpAdvantage3Content_l5'], 'string'],
+            [['mpOfferTitle_l1', 'mpOfferTitle_l2', 'mpOfferTitle_l3', 'mpOfferTitle_l4', 'mpOfferTitle_l5'], 'string', 'max' => 255],
+            [['mpOfferContent_l1', 'mpOfferContent_l2', 'mpOfferContent_l3', 'mpOfferContent_l4', 'mpOfferContent_l5'], 'string'],
+            [['mpOfferLinkTitle_l1', 'mpOfferLinkTitle_l2', 'mpOfferLinkTitle_l3', 'mpOfferLinkTitle_l4', 'mpOfferLinkTitle_l5'], 'string', 'max' => 255],
+            [['mpOfferLink_l1', 'mpOfferLink_l2', 'mpOfferLink_l3', 'mpOfferLink_l4', 'mpOfferLink_l5'], 'string', 'max' => 255],
+            [['mpDeliverTitle_l1', 'mpDeliverTitle_l2', 'mpDeliverTitle_l3', 'mpDeliverTitle_l4', 'mpDeliverTitle_l5'], 'string', 'max' => 255],
+            [['mpDeliverContent_l1', 'mpDeliverContent_l2', 'mpDeliverContent_l3', 'mpDeliverContent_l4', 'mpDeliverContent_l5'], 'string'],
+            [['mpDeliverLinkTitle_l1', 'mpDeliverLinkTitle_l2', 'mpDeliverLinkTitle_l3', 'mpDeliverLinkTitle_l4', 'mpDeliverLinkTitle_l5'], 'string', 'max' => 255],
+            [['mpDeliverLink_l1', 'mpDeliverLink_l2', 'mpDeliverLink_l3', 'mpDeliverLink_l4', 'mpDeliverLink_l5'], 'string', 'max' => 255],
+            [['mpMakingTitle_l1', 'mpMakingTitle_l2', 'mpMakingTitle_l3', 'mpMakingTitle_l4', 'mpMakingTitle_l5'], 'string', 'max' => 255],
+            ['mpMakingVideo', 'string'],
+            [['mpCoordinates'], 'string', 'max' => 255],
+            [['mpMapText_l1', 'mpMapText_l2', 'mpMapText_l3', 'mpMapText_l4', 'mpMapText_l5'], 'string'],
+            [['mpStepsTitle_l1', 'mpStepsTitle_l2', 'mpStepsTitle_l3', 'mpStepsTitle_l4', 'mpStepsTitle_l5'], 'string', 'max' => 255],
+            [['mpStep1_l1', 'mpStep1_l2', 'mpStep1_l3', 'mpStep1_l4', 'mpStep1_l5'], 'string'],
+            [['mpStep2_l1', 'mpStep2_l2', 'mpStep2_l3', 'mpStep2_l4', 'mpStep2_l5'], 'string'],
+            [['mpStep3_l1', 'mpStep3_l2', 'mpStep3_l3', 'mpStep3_l4', 'mpStep3_l5'], 'string'],
+            [['mpStep4_l1', 'mpStep4_l2', 'mpStep4_l3', 'mpStep4_l4', 'mpStep4_l5'], 'string'],
+            [['mpStep5_l1', 'mpStep5_l2', 'mpStep5_l3', 'mpStep5_l4', 'mpStep5_l5'], 'string'],
+            [['mpReviewsTitle_l1', 'mpReviewsTitle_l2', 'mpReviewsTitle_l3', 'mpReviewsTitle_l4', 'mpReviewsTitle_l5'], 'string', 'max' => 255],
+            [['mpReviewsText_l1', 'mpReviewsText_l2', 'mpReviewsText_l3', 'mpReviewsText_l4', 'mpReviewsText_l5'], 'string'],
+            ['mpReviewsLink', 'string', 'max' => 255],
+            [['mpInstagramTitle_l1', 'mpInstagramTitle_l2', 'mpInstagramTitle_l3', 'mpInstagramTitle_l4', 'mpInstagramTitle_l5'], 'string', 'max' => 255],
+            [['mpInstagramLinkTitle_l1', 'mpInstagramLinkTitle_l2', 'mpInstagramLinkTitle_l3', 'mpInstagramLinkTitle_l4', 'mpInstagramLinkTitle_l5', 'mpInstagramLink'], 'string', 'max' => 255],
+            [['mpPartnersTitle_l1', 'mpPartnersTitle_l2', 'mpPartnersTitle_l3', 'mpPartnersTitle_l4', 'mpPartnersTitle_l5'], 'string', 'max' => 255],
+          ];
+	}
+        
+        
+        
+    public function attributeLabels()
+    {
+        return [
+
+        ];
+    }
+}
