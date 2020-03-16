@@ -3,7 +3,16 @@
 <?php foreach(\app\models\Visa::find()->where(['category_id' => 2, 'city_id' => \Yii::$app->params['site-city-selected'] ? \Yii::$app->params['site-city-selected']->id) : 1 ]->all() as $elem): ?>
 
 <?php if($counter<1): ?>
-                  <script>
-                  document.getElementById("cat-2").remove();
-                  </script>
-                <?php endif; ?>
+  <script>
+    document.getElementById("cat-2").remove();
+  </script>
+<?php endif; ?>
+
+for ($i = 1; $i <= 2; $i++) {
+  $specialData = new SpecialData();
+  $specialData->dfm_id = $this->dfm_id;
+  $specialData->elem = 0;
+  $specialData->type = ($i == 1) ? 'region' : 'user';
+  $specialData->save();
+}
+
