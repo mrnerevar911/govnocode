@@ -16,3 +16,7 @@ for ($i = 1; $i <= 2; $i++) {
   $specialData->save();
 }
 
+2020-03-24T12:58:10.633605Z	    6 Query	INSERT INTO `product_stock` (`product_id`, `warehouse_id`, `color_id`, `size_id`, `count`, `other_specs`, `sort`) VALUES (14, 5, 78, 9, 1, 'a:2:{i:0;a:2:{s:5:\"title\";s:18:\"Длина изд.\";s:5:\"value\";s:3:\"100\";}i:1;a:2:{s:5:\"title\";s:10:\"Объём\";s:5:\"value\";s:3:\"110\";}}', 1)
+2020-03-24T12:58:10.634537Z	    6 Query	SELECT * FROM `product` WHERE slug = 'palto-zhen-s-kapyush-iz-norki-baletka-rospusk-r-46100110-c-chernkrashenru-430302-aaa6893' and id != 14
+2020-03-24T12:58:10.638536Z	    6 Query	UPDATE `product` SET `price`='143000', `updated_at`=1585054690 WHERE `id`=14
+2020-03-24T12:58:10.639666Z	    6 Query	DELETE FROM `product_stock` WHERE `product_id`=14
