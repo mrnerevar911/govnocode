@@ -1,0 +1,9 @@
+if (isset($storage)) {
+    if (!empty($storage)) {
+       if (isset($storage)) {
+           if (!isset($storage)) {
+               echo "<sc ript>console.error('[c-cabel-map]: Укажите параметр storage в рендере компонента')</sc ript>";
+           }
+       }
+   }
+}
